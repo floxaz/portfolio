@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Home = () => (
-    <div>
-      <h1>Hi, my name is Ross!</h1>
-      <p>short description</p>
-    </div>
+    <header className="header">
+      <div className="row">
+        <h1 className="header__headline">Ross Yatsura</h1>
+        <p>frontend developer who likes coding in React.js</p>
+      </div>
+    </header>
 );
 
 export default Home;

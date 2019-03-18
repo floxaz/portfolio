@@ -1,0 +1,38 @@
+.nav {
+
+    &__item {
+        padding: 2.5rem 0;
+        position: relative;
+    }
+
+    &__item::after {
+        content: '';
+        display: block;
+        background: #34495e;
+        width: 0%;
+        height: .2rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: width .2s ease;
+    }
+
+    &__item:hover::after {
+        width: 100%;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: #34495e;
+        text-decoration: none;
+    }
+}
+// this class is for row div 
+.nav-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+// this class is for react router nav link
+.selected {
+    display: none;
+}
