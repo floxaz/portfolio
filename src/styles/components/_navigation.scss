@@ -1,20 +1,35 @@
 .nav {
+    position: relative;
 
     &__item {
         padding: 2.5rem 0;
         position: relative;
     }
 
-    &__item::after {
+    &__item:last-child {
+        margin-left: 2rem;
+    }
+
+    &__item::after,
+    .selected::after {
         content: '';
         display: block;
         background: #34495e;
-        width: 0%;
+        //width: 0%;
         height: .2rem;
         position: absolute;
         left: 0;
         bottom: 0;
         transition: width .2s ease;
+        margin: 0;
+    }
+
+    &__item::after {
+        width: 0%;
+    }
+
+    .selected::after {
+        width: 100%;
     }
 
     &__item:hover::after {
@@ -31,8 +46,8 @@
 .nav-flex {
     display: flex;
     justify-content: flex-end;
+    text-align: right;
 }
 // this class is for react router nav link
-.selected {
-    display: none;
-}
+
+
