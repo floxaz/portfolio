@@ -11,7 +11,7 @@
     }
 
     &__item::after,
-    .selected::after {
+    .selected-about::after {
         content: '';
         display: block;
         background: #34495e;
@@ -19,7 +19,7 @@
         height: .2rem;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 1rem;
         transition: width .2s ease;
         margin: 0;
     }
@@ -28,7 +28,7 @@
         width: 0%;
     }
 
-    .selected::after {
+    .selected-about::after {
         width: 100%;
     }
 
@@ -46,8 +46,10 @@
 .nav-flex {
     display: flex;
     justify-content: flex-end;
-    text-align: right;
+    align-items: center;
 }
 // this class is for react router nav link
-
+.selected-home {
+    display: none;
+}
 

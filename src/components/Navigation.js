@@ -5,10 +5,10 @@ const Navigation = props => (
     <nav className="nav">
       <div className="row nav-flex">
         <div className="nav__item">
-          <NavLink exact to="/" activeClassName="selected" className="nav__link">Home</NavLink>
+          <NavLink exact to="/" activeClassName="selected-home" className="nav__link">Home</NavLink>
         </div>
         <div className="nav__item">
-          <NavLink to="/about" activeClassName="selected" className="nav__link">About</NavLink>
+          <NavLink to="/about" activeClassName="selected-about" className="nav__link">About</NavLink>
         </div>
       </div>
     </nav>

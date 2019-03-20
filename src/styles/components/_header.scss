@@ -1,11 +1,11 @@
 .header {
-    background: #cecece;
+    //background: #cecece;
     padding: 8.5rem 0;
-    
+    text-align: center;
     &__headline {
         font-family: 'Poppins', sans-serif;
-        font-size: 5rem;
-        font-weight: 300;
+        font-size: 8rem;
+        font-weight: 100;
         letter-spacing: 120%;
         text-transform: uppercase;
     }
