@@ -1,10 +1,53 @@
 .contact {
-    text-align: center;
+    border-top: .1rem solid $second-color;
+
+    &__dashboard {
+        width: 24rem;
+        margin: 0 auto;
+        padding: 1rem 0;
+        border: .1rem solid $second-color;
+        border-radius: 50rem;
+        text-align: center;
+        transform: translateY(-50%);
+        background: #fff;
+    }
+
+    &__link {
+        height: 100%;
+    }
 
     &__icon {
-        fill: #34495e;
-        width: 5rem;
-        height: 5rem;
+        fill: $first-color;
+        width: 3.8rem;
+        height: 3.8rem;
         margin: 0 1.2rem;
+        transition: all 1s;
+    }
+
+    &__icon:hover {
+        animation: bounce .5s;
+        fill: #000;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0rem);
+    }
+
+    25% {
+        transform: translateY(-.4rem);
+    }
+
+    50% {
+        transform: translateY(0rem);
+    }
+
+    75% {
+        transform: translateY(-.2rem)
+    }
+
+    100% {
+        transform: translateY(0rem);
     }
 }
