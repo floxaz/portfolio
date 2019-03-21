@@ -1,0 +1,14 @@
+.footer {
+    border-top: .1rem solid $second-color;
+    text-align: center;
+    padding-top: 4.5rem; 
+
+    &__copyright {
+        color: #c1c1c1;
+        font-size: 1.2rem;
+    }
+
+    &__author {
+        color: $first-color;
+    }
+}

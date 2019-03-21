@@ -1,5 +1,7 @@
 import React from 'react';
 import Contact from './Contact';
+import Projects from './Projects';
+import Footer from './Footer';
 
 const Home = () => (
   <React.Fragment>
@@ -10,6 +12,8 @@ const Home = () => (
       </div>
     </header>
     <Contact />
+    <Projects />
+    <Footer />
   </React.Fragment>
 );
 

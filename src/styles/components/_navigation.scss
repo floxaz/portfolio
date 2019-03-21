@@ -1,6 +1,12 @@
 .nav {
     position: relative;
 
+    &__display-flex {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     &__item {
         padding: 2.5rem 0;
         position: relative;
@@ -42,12 +48,7 @@
         text-decoration: none;
     }
 }
-// this class is for row div 
-.nav-flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 // this class is for react router nav link
 .selected-home {
     display: none;
