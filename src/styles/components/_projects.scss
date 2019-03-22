@@ -8,7 +8,8 @@
     }
 
     &__item {
-        box-shadow: 0px 4px 14px 0px rgba($second-color, 1);
+        //box-shadow: 0px 4px 14px 0px rgba($second-color, 1);
+        box-shadow: 0px 10px 20px 0px rgba($second-color, .75);
         flex-basis: 35rem;
         transition: all .4s ease;
         position: relative;
@@ -28,10 +29,21 @@
     }
 
     &__img {
-        display: block;
-        width: 35rem;
-        height: auto;
+        background-size: cover;
+        height: 20rem;
         transition: all .4s ease;
+
+        &--1 {
+            background-image: linear-gradient(rgba($first-color, .2), rgba($first-color, .4)), url(./images/project-1.png);
+        }
+
+        &--2 {
+            background-image: linear-gradient(rgba($first-color, .2), rgba($first-color, .4)), url(./images/project-2.png);
+        }
+
+        &--3 {
+            background-image: linear-gradient(rgba($first-color, .2), rgba($first-color, .4)), url(./images/project-3.png);
+        }
     }
 }
 

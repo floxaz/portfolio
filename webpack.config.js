@@ -16,7 +16,13 @@ module.exports = {
         {
             use: ['style-loader', 'css-loader', 'sass-loader'],
             test: /\.s?css$/
-        }]
+        },
+        {
+            loader: 'file-loader',
+            test: /\.(png|jpg)$/,
+            include: path.join(__dirname, 'src')
+        }
+    ]
     },
     devtool: 'cheap-moduel-eval-sourc-map',
     devServer: {
