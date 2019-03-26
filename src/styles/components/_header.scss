@@ -1,6 +1,7 @@
 .header {
     //background: #cecece;
     padding: 8.5rem 0;
+    position: relative;
     text-align: center;
     &__headline {
         font-family: 'Poppins', sans-serif;
@@ -8,5 +9,6 @@
         font-weight: 100;
         letter-spacing: 120%;
         text-transform: uppercase;
+        //z-index: 100;
     }
 }
