@@ -11,7 +11,11 @@ class Home extends React.Component {
   };
 
   componentDidMount = () => {
-    console.log('mounted');
+    this.getHeaderSize();
+    window.addEventListener('resize', this.getHeaderSize);
+  };
+
+  getHeaderSize = () => {
     const header = this.refs.header;
     this.setState(() => ({
       headerWidth: header.offsetWidth,
@@ -34,7 +38,7 @@ class Home extends React.Component {
         <Footer />
       </React.Fragment>
     )
-  }
+  };
 };
 
 export default Home;
