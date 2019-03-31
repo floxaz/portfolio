@@ -1,18 +1,24 @@
 import React from 'react';
 
 class Canvas extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     componentDidMount = () => {
         const canvas = this.refs.canvas;
         const ctx = canvas.getContext('2d');
-        const radius = 15;
-        const circlesQuantity = 50;
+        const radius = 0.8;
+        const circlesQuantity = 150;
         let circles = [];
         canvas.width = canvas.offsetWidth;
         canvas.height = canvas.offsetHeight;
+
+        const mouse = {
+            x: undefined,
+            y: undefined
+        }
+
+        canvas.addEventListener('mousemove', e => {
+            console.log('kek');
+        });
 
         function Circle(x, y, speedX, speedY, radius, ctx, width = canvas.width, height = canvas.height) {
             this.x = x;
@@ -27,8 +33,9 @@ class Canvas extends React.Component {
             this.draw = () => {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, Math.PI * 2, false);
-                ctx.strokeStyle = '#34495e';
-                ctx.stroke();   
+                //ctx.strokeStyle = '#34495e';
+                ctx.fillStyle = '#34495e';
+                ctx.fill();   
             };
 
             this.update = () => {
@@ -56,9 +63,9 @@ class Canvas extends React.Component {
         for (let i = 0; i < circlesQuantity; i++) {
             const x = Math.random() * (canvas.width - radius * 2) + radius;
             const y = Math.random() * (canvas.height - radius * 2) + radius;
-            const speedX = Math.random() - 0.5;
-            const speedY = Math.random() - 0.5;
-            circles.push(new Circle(x, y, speedX, speedY, radius, ctx, canvas.width, canvas.height));
+            const speedX = Math.random() - 0.5 > 0 ? 0.1 : -0.1;
+            const speedY = Math.random() - 0.5 > 0 ? 0.1 : -0.1;
+            circles.push(new Circle(x, y, speedX, speedY, radius, ctx));
         }
 
         animate();

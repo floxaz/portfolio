@@ -36,7 +36,7 @@
         transition: all .4s ease;
 
         &--1 {
-            background-image: linear-gradient(rgba($first-color, .2), rgba($first-color, .4)), url(./images/project-1.png);
+            background-image: linear-gradient(rgba($first-color, .2), rgba($first-color, .4)), url(./images/project-3.png);
         }
 
         &--2 {
@@ -44,7 +44,7 @@
         }
 
         &--3 {
-            background-image: linear-gradient(rgba($first-color, .2), rgba($first-color, .4)), url(./images/project-3.png);
+            background-image: linear-gradient(rgba($first-color, .2), rgba($first-color, .4)), url(./images/project-1.png);
         }
     }
 }
