@@ -1,0 +1,18 @@
+.about {
+    margin-top: 2rem;
+    &__display-flex {
+        display: flex;
+    }
+
+    &__img {
+        width: 45rem;
+    }
+
+    &__description {
+        padding-left: 4rem;
+
+        p:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+}
