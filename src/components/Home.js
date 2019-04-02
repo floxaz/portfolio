@@ -15,7 +15,6 @@ const Home = () => (
     </header>
     <Contact />
     <Projects />
-    <Footer />
   </React.Fragment>
 );
 

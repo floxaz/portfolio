@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation';
 import Home from '../components/Home';
 import About from '../components/About';
 import PageNotFound from '../components/PageNotFound';
+import Footer from '../components/Footer';
 
 const PortfolioRouter = () => (
     <BrowserRouter>
@@ -13,6 +14,7 @@ const PortfolioRouter = () => (
         <Route path="/about" component={About} />
         <Route component={PageNotFound} />
       </Switch>
+      <Footer />
     </BrowserRouter>
 );
 

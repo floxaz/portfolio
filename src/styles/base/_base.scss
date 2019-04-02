@@ -14,7 +14,14 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
 }
+/*
+.container {
+    position: relative;
+    height: 100%;
+}
+*/
 
 h1 {
     margin: 0;
