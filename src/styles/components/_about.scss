@@ -25,4 +25,15 @@
             margin-bottom: 2rem;
         }
     }
+
+    &__skills {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__skill {
+        background: $first-color;
+        color: #fff;
+        padding: .8rem 2rem;
+    }
 }

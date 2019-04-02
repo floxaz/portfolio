@@ -22,8 +22,18 @@ const About = props => (
         <p>
           All in all, it would be a real pleasure for me if my passion and interest
           in tech could solve people's problems and make their life easier.
-          Therefore, in case you have any questions, don't hesitate and contact me.
+          Therefore, in case you have any questions, don't hesitate to contact me.
          </p>
+         <h2>Skills</h2>
+         <div className="about__skills">
+           <div className="about__skill">html</div>
+           <div className="about__skill">css</div>
+           <div className="about__skill">sass</div>
+           <div className="about__skill">javascript</div>
+           <div className="about__skill">react</div>
+           <div className="about__skill">redux</div>
+           <div className="about__skill">git</div>
+         </div>
       </div>
     </div>
   </div>
