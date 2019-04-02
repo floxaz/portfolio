@@ -4,11 +4,12 @@ const About = props => (
   <div className="about">
     <div className="row about__display-flex">
       <figure>
-        <img src="images/me.jpg" className="about__img"></img>
+        <img src="images/portrait.jpg" className="about__img" alt="portrait"></img>
       </figure>
       <div className="about__description">
+        <h2>Hello,</h2>
         <p>
-          My name is Rostylsav Yatsura and I am a passionate web developer,
+          my name is Rostylsav Yatsura and I am a passionate web developer,
           who specializes in creating dynamic and beautiful web pages.
           The creation process involves the use of the latest technologies of our
           fast-paced digital world.
@@ -20,8 +21,8 @@ const About = props => (
          </p>
         <p>
           All in all, it would be a real pleasure for me if my passion and interest
-          in Tech could solve people's problems and make their life easier.
-          If you have any questions, contact me.
+          in tech could solve people's problems and make their life easier.
+          Therefore, in case you have any questions, don't hesitate and contact me.
          </p>
       </div>
     </div>
