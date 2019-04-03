@@ -7,15 +7,17 @@ import PageNotFound from '../components/PageNotFound';
 import Footer from '../components/Footer';
 
 const PortfolioRouter = () => (
-    <BrowserRouter>
+  <BrowserRouter>
+    <div className="content">
       <Navigation />
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/about" component={About} />
         <Route component={PageNotFound} />
       </Switch>
-      <Footer />
-    </BrowserRouter>
+    </div>
+    <Footer />
+  </BrowserRouter>
 );
 
 export default PortfolioRouter;
