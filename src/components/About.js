@@ -9,7 +9,7 @@ const About = props => (
       <div className="about__description">
         <h2>Hello,</h2>
         <p>
-          my name is Rostylsav Yatsura and I am a passionate web developer,
+          my full name is Rostylsav Yatsura and I am a passionate web developer,
           who specializes in creating dynamic and beautiful web pages.
           The creation process involves the use of the latest technologies of our
           fast-paced digital world.
