@@ -2,14 +2,17 @@
     border-top: .1rem solid $second-color;
 
     &__dashboard {
+        animation: rotate-dashboard .6s ease-in-out 1s;
+        animation-fill-mode: forwards;
+        background: #fff;
         width: 22rem;
         margin: 0 auto;
         padding: 1rem 0;
         border: .1rem solid $second-color;
         border-radius: 50rem;
         text-align: center;
-        transform: translateY(-50%);
-        background: #fff;
+        transform: translateY(-50%) rotateX(-90deg);
+        transition: transform .4s;
     }
 
     &__link {
@@ -27,6 +30,16 @@
     &__icon:hover {
         animation: bounce .5s;
         fill: #000;
+    }
+}
+
+@keyframes rotate-dashboard {
+    0% {
+        transform: translateY(-50%) rotateX(-90deg);
+    }
+
+    100% {
+        transform: translateY(-50%) rotateX(0);
     }
 }
 
