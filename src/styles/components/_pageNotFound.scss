@@ -1,0 +1,42 @@
+.notFound {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &__message {
+        position: absolute;
+        width: 50rem;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__headline {
+        font-size: 10rem;
+        font-weight: 300;
+    }
+
+    &__error {
+        letter-spacing: .07rem;
+        margin-bottom: 3rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        background: $first-color;
+        border: 1px solid $first-color;
+        border-radius: 100px;
+        display: inline-block;
+        color: #fff;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        transition: all .4s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        background: #fff;
+        color: $first-color;
+    }
+}
