@@ -3,7 +3,7 @@
 
     &__display-flex {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -11,7 +11,7 @@
         //box-shadow: 0px 4px 14px 0px rgba($second-color, 1);
         //border-radius: .5rem;
         box-shadow: 0px 10px 20px 0px rgba($second-color, .75);
-        flex-basis: 35rem;
+        flex-basis: 56rem;
         //overflow: hidden;
         transform: translate(0, 0) scale(1);
         transition: all .4s ease;
@@ -58,7 +58,7 @@
 
     &__img {
         background-size: cover;
-        height: 20rem;
+        height: 32rem;
         transition: all .4s ease;
 
         &--1 {
@@ -133,4 +133,14 @@
         opacity: 1;
         transform: translate(0, 0);
     }
+}
+
+@media (min-width: $middle-desktop) {
+    .projects__display-flex { justify-content: space-around; }
+    .projects__item { flex-basis: 35rem; }
+    .projects__img { height: 20rem; }
+}
+
+@media (min-width: $desktop) {
+    .projects__display-flex { justify-content: space-between; }
 }

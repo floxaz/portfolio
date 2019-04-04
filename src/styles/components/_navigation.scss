@@ -8,6 +8,7 @@
     }
 
     &__item {
+        margin-right: 2rem;
         padding: 2.5rem 0;
         position: relative;
     }
@@ -52,5 +53,11 @@
 // this class is for react router nav link
 .selected-home {
     display: none;
+}
+
+@media (min-width: $desktop) {
+    .nav__item {
+        margin-right: 0;
+    }
 }
 
