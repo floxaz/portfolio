@@ -6,9 +6,9 @@ class Home extends React.Component {
     componentDidMount = () => {
         const options = {
             strings: ['frontend developer based in Venice'],
-            startDelay: 2000,
+            startDelay: 1500,
             cursorChar: '',
-            typeSpeed: 50,
+            typeSpeed: 40,
             backSpeed: 20
         }
 
