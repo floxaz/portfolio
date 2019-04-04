@@ -9,10 +9,10 @@
 
     &__item {
         //box-shadow: 0px 4px 14px 0px rgba($second-color, 1);
-        border-radius: .5rem;
+        //border-radius: .5rem;
         box-shadow: 0px 10px 20px 0px rgba($second-color, .75);
         flex-basis: 35rem;
-        overflow: hidden;
+        //overflow: hidden;
         transform: translate(0, 0) scale(1);
         transition: all .4s ease;
         position: relative;
@@ -36,17 +36,23 @@
     &__item--3 {
         animation-fill-mode: forwards;
     }
+
+    &__content {
+        border-radius: .5rem;
+        transition: all .4s ease;
+        overflow: hidden;
+    }
     
-    &__item:hover {
+    &__content:hover {
         box-shadow: 0px 8px 14px 0px rgba($second-color, 1);
         transform: translate(0, 0) scale(1.1);
     }
 
-    &__item:hover .projects__img {
+    &__content:hover .projects__img {
         filter: blur(.12rem);
     }
 
-    &__item:hover .project {
+    &__content:hover .project {
         opacity: 1;
     }
 
