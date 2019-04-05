@@ -8,7 +8,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 50%;
 }
 
 body {
@@ -30,12 +30,8 @@ h1 {
     max-width: 114rem;
     margin: 0 auto;
     padding: 0;
-    //z-index: 50;
 }
-/*
-@media (min-width: 66.87em) {
-    html {
-        font-size: 62.5%;
-    }
+
+@media (min-width: $large-phone) {
+    html { font-size: 62.5%; }
 }
-*/
