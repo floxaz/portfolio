@@ -3,16 +3,17 @@
 
     &__display-flex {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
     }
 
     &__item {
-        //box-shadow: 0px 4px 14px 0px rgba($second-color, 1);
-        //border-radius: .5rem;
+        margin: 0 2rem;
         box-shadow: 0px 10px 20px 0px rgba($second-color, .75);
-        flex-basis: 56rem;
-        //overflow: hidden;
+        //flex-basis: 56rem;
+        //height: 35rem;
+        flex-basis: 35rem;
         transform: translate(0, 0) scale(1);
         transition: all .4s ease;
         position: relative;
@@ -38,6 +39,9 @@
     }
 
     &__content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
         border-radius: .5rem;
         transition: all .4s ease;
         overflow: hidden;
@@ -57,8 +61,12 @@
     }
 
     &__img {
+        display: inline-block;
         background-size: cover;
-        height: 32rem;
+        //height: 32rem;
+        width: 100%;
+        height: 100%;
+        position: absolute;
         transition: all .4s ease;
 
         &--1 {
@@ -136,9 +144,29 @@
 }
 
 @media (min-width: $middle-desktop) {
-    .projects__display-flex { justify-content: space-around; }
-    .projects__item { flex-basis: 35rem; }
-    .projects__img { height: 20rem; }
+    .projects__display-flex {
+        flex-direction: row;
+        justify-content: space-around; 
+        align-items: stretch;
+    }
+
+    .projects__content {
+        position: unset;
+        width: auto;
+        height: 20rem;
+    }
+    .projects__item { 
+        flex-basis: 35rem;
+        margin: 0; 
+    }
+    .projects__img { 
+        position: unset;
+        height: 20rem;
+    }
+
+    .project {
+        height: 20rem;
+    }
 }
 
 @media (min-width: $desktop) {
