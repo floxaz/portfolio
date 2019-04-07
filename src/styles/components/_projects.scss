@@ -12,10 +12,7 @@
     &__item {
         width: 35rem;
         box-shadow: 0px 10px 20px 0px rgba($second-color, .75);
-        //flex-basis: 56rem;
-        //height: 35rem;
         flex-basis: 20rem;
-        //flex: 0 1 30rem;
         transform: translate(0, 0) scale(1);
         transition: all .4s ease;
         position: relative;
@@ -23,7 +20,12 @@
     }
 
     &__item:not(:last-child) {
-        margin-bottom: 2rem;
+        //margin-bottom: 2rem;
+        margin-bottom: 7rem;
+    }
+
+    &__item:last-child {
+        margin-bottom: 4rem;
     }
 
     &__item--1 {
@@ -48,26 +50,13 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        border-radius: .5rem;
+        //height: auto;
         transition: all .4s ease;
-        overflow: hidden;
-    }
-    
-    &__content:hover {
-        box-shadow: 0px 8px 14px 0px rgba($second-color, 1);
-        transform: translate(0, 0) scale(1.06);
-    }
-
-    &__content:hover .projects__img {
-        filter: blur(.12rem);
-    }
-
-    &__content:hover .project {
-        opacity: 1;
     }
 
     &__img {
         display: inline-block;
+        border-radius: .5rem;
         background-size: cover;
         //height: 32rem;
         width: 100%;
@@ -91,47 +80,43 @@
 
 .project {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: -4rem;
     width: 100%;
-    height: 100%;
     color: #fff;
-    opacity: 0;
-    transition: opacity .5s ease;
     
     &__option {
         font-size: 2rem;
-        width: 20rem;
-        margin: 0 auto;
+        width: 50%;
+        height: 5rem;
         text-align: center;
         text-transform: uppercase;
+        overflow: hidden;
     }
 
-    &__option:not(:last-child) {
-        margin-bottom: .5rem;
+    &__option:first-child {
+        border-bottom-left-radius: .5rem;
+    }
+
+    &__option:last-child {
+        border-bottom-right-radius: .5rem;
     }
 
     &__link {
+        border: 1px solid $first-color; // mobile only
         display: block;
         width: 100%;
         height: 100%;
         text-decoration: none;
         color: #fff;
         padding: 1.5rem 0;
-        background: #fff;
-        background: linear-gradient(to right, $first-color 50%, #fff 50%);
-        background-size: 200%;
-        transition: all .5s ease;
-        transform: scale(1);
+        background: $first-color;
     }
 
-    &__link:hover {
-        background-position: 100%;
+    &__link:active {
+        background: #fff;
         color: $first-color;
-        //transform: scale(1.05);
     }
     
     
@@ -179,8 +164,60 @@
         height: 16rem;
     }
 
+    .projects__content:hover {
+        box-shadow: 0px 8px 14px 0px rgba($second-color, 1);
+        transform: translate(0, 0) scale(1.06);
+    }
+
+    .projects__content:hover .projects__img {
+        filter: blur(.12rem);
+    }
+
+    .projects__content:hover .project {
+        opacity: 1;
+    }
+
     .project {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: 16rem;
+        //height: 100%;
+        opacity: 0;
+        transition: opacity .5s ease;
+    }
+
+    .project__option {
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    .project__option:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    .project__option:first-child {
+        border-bottom-left-radius: 0;
+    }
+
+    .project__option:last-child {
+        border-bottom-right-radius: 0;
+    }
+
+    .project__link {
+        border: none;
+        background: #fff;
+        background: linear-gradient(to right, $first-color 50%, #fff 50%);
+        background-size: 200%;
+        transition: all .5s ease;
+        transform: scale(1);
+    }
+
+    .project__link:hover,
+    .project__link:active {
+        background-position: 100%;
+        color: $first-color;  
     }
 }
 

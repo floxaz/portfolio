@@ -11,7 +11,7 @@ const Projects = () => (
                             <a href="#" className="project__link">watch</a>
                         </div>
                         <div className="project__option">
-                            <a href="#" className="project__link">source code</a>
+                            <a href="#" className="project__link">view code</a>
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ const Projects = () => (
                             <a href="#" className="project__link">watch</a>
                         </div>
                         <div className="project__option">
-                            <a href="#" className="project__link">source code</a>
+                            <a href="#" className="project__link">view code</a>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const Projects = () => (
                             <a href="#" className="project__link">watch</a>
                         </div>
                         <div className="project__option">
-                            <a href="#" className="project__link">source code</a>
+                            <a href="#" className="project__link">view code</a>
                         </div>
                     </div>
                 </div>
