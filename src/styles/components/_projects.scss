@@ -87,7 +87,7 @@
     color: #fff;
     
     &__option {
-        font-size: 2rem;
+        font-size: 1.6rem;
         width: 50%;
         height: 5rem;
         text-align: center;
@@ -114,11 +114,23 @@
         background: $first-color;
     }
 
+    &__icon {
+        fill: #fff;
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-left: 1rem;
+        vertical-align: middle;
+        transform: translateY(-.2rem);
+    }
+    
     &__link:active {
         background: #fff;
         color: $first-color;
     }
-    
+
+    &__link:active &__icon {
+        fill: $first-color;
+    }
     
 }
 
@@ -214,10 +226,19 @@
         transform: scale(1);
     }
 
+    .project__icon {
+        transition: all .5s ease;
+    }
+
     .project__link:hover,
     .project__link:active {
         background-position: 100%;
         color: $first-color;  
+    }
+
+    .project__link:hover .project__icon,
+    .project__link:active .project__icon {
+        fill: $first-color;
     }
 }
 

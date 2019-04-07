@@ -8,10 +8,20 @@ const Projects = () => (
                     <div className="projects__img projects__img--1"></div>
                     <div className="project">
                         <div className="project__option">
-                            <a href="#" className="project__link">watch</a>
+                            <a href="#" className="project__link">
+                                <span className="project__text">watch</span>
+                                <svg className="project__icon">
+                                    <use href="/images/sprite.svg#icon-eye"></use>
+                                </svg>
+                            </a>
                         </div>
                         <div className="project__option">
-                            <a href="#" className="project__link">view code</a>
+                            <a href="#" className="project__link">
+                                <span className="project__text">view code</span>
+                                <svg className="project__icon">
+                                    <use href="/images/sprite.svg#icon-embed"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -22,10 +32,20 @@ const Projects = () => (
                     <div className="projects__img projects__img--2"></div>
                     <div className="project">
                         <div className="project__option">
-                            <a href="#" className="project__link">watch</a>
+                            <a href="#" className="project__link">
+                                <span className="project__text">watch</span>
+                                <svg className="project__icon">
+                                    <use href="/images/sprite.svg#icon-eye"></use>
+                                </svg>
+                            </a>
                         </div>
                         <div className="project__option">
-                            <a href="#" className="project__link">view code</a>
+                            <a href="#" className="project__link">
+                                <span className="project__text">view code</span>
+                                <svg className="project__icon">
+                                    <use href="/images/sprite.svg#icon-embed"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -36,10 +56,20 @@ const Projects = () => (
                     <div className="projects__img projects__img--3"></div>
                     <div className="project">
                         <div className="project__option">
-                            <a href="#" className="project__link">watch</a>
+                            <a href="#" className="project__link">
+                                <span className="project__text">watch</span>
+                                <svg className="project__icon">
+                                    <use href="/images/sprite.svg#icon-eye"></use>
+                                </svg>
+                            </a>
                         </div>
                         <div className="project__option">
-                            <a href="#" className="project__link">view code</a>
+                            <a href="#" className="project__link">
+                                <span className="project__text">view code</span>
+                                <svg className="project__icon">
+                                    <use href="/images/sprite.svg#icon-embed"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
