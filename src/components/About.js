@@ -32,6 +32,7 @@ const About = props => (
            <div className="about__skill">javascript</div>
            <div className="about__skill">react</div>
            <div className="about__skill">redux</div>
+           <div className="about__skill">jest</div>
            <div className="about__skill">git</div>
          </div>
       </div>
