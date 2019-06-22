@@ -1,3 +1,3 @@
 # Portfolio
-Here is being built my portfolio website.
-Thank you for reading this :)
+Personal portfolio built using HTML, SCSS and React
+[rossyatsura frontend developer](https://rossyatsura.com)
