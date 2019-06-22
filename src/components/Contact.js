@@ -16,7 +16,7 @@ const Contact = () => (
           </svg>
         </a>
 
-        <a href="#" className="contact__link">
+        <a href="https://www.linkedin.com/in/ross-yatsura-196769186/" target="_blank" className="contact__link">
           <svg className="contact__icon">
             <use href="/images/sprite.svg#icon-linkedin"></use>
           </svg>
