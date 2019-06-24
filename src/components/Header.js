@@ -5,7 +5,7 @@ import Canvas from './Canvas';
 class Home extends React.Component {
     componentDidMount = () => {
         const options = {
-            strings: ['frontend developer based in Venice'],
+            strings: ['front-end developer based in Venice'],
             startDelay: 1500,
             cursorChar: '',
             typeSpeed: 40,

@@ -1,79 +1,29 @@
 import React from 'react';
+import Project from './Project';
 
 const Projects = () => (
     <section className="projects">
         <div className="row projects__display-flex">
-            <div className="projects__item projects__item--1">
-                <div className="projects__content">
-                    <div className="projects__img projects__img--1"></div>
-                    <div className="project">
-                        <div className="project__option">
-                            <a href="#" className="project__link">
-                                <span className="project__text">watch</span>
-                                <svg className="project__icon">
-                                    <use href="/images/sprite.svg#icon-eye"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div className="project__option">
-                            <a href="#" className="project__link">
-                                <span className="project__text">view code</span>
-                                <svg className="project__icon">
-                                    <use href="/images/sprite.svg#icon-embed"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="projects__item projects__item--2">
-                <div className="projects__content">
-                    <div className="projects__img projects__img--2"></div>
-                    <div className="project">
-                        <div className="project__option">
-                            <a href="#" className="project__link">
-                                <span className="project__text">watch</span>
-                                <svg className="project__icon">
-                                    <use href="/images/sprite.svg#icon-eye"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div className="project__option">
-                            <a href="#" className="project__link">
-                                <span className="project__text">view code</span>
-                                <svg className="project__icon">
-                                    <use href="/images/sprite.svg#icon-embed"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="projects__item projects__item--3">
-                <div className="projects__content">
-                    <div className="projects__img projects__img--3"></div>
-                    <div className="project">
-                        <div className="project__option">
-                            <a href="#" className="project__link">
-                                <span className="project__text">watch</span>
-                                <svg className="project__icon">
-                                    <use href="/images/sprite.svg#icon-eye"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div className="project__option">
-                            <a href="#" className="project__link">
-                                <span className="project__text">view code</span>
-                                <svg className="project__icon">
-                                    <use href="/images/sprite.svg#icon-embed"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Project
+                number={4}
+                github={'https://github.com/floxaz/movie-gallery'}
+                live={'http://moviegallery.rossyatsura.com'}
+            />
+            <Project
+                number={3}
+                github={'https://github.com/floxaz/calculator'}
+                live={'http://calculator.rossyatsura.com'}
+            />
+            <Project
+                number={2}
+                github={'https://github.com/floxaz/weatherApp'}
+                live={'https://floxaz.github.io/weather-app-live'}
+            />
+            <Project
+                number={1}
+                github={'https://github.com/floxaz/top-poems'}
+                live={'https://floxaz.github.io/top-poems'}
+            />
         </div>
     </section>
 );
