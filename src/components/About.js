@@ -15,12 +15,12 @@ const About = props => (
           fast-paced digital world.
          </p>
         <p className="about__paragraph about__paragraph--2">
-          My primary focus is frontend web development with React.js.
-          I love dedicating days and even weeks to sharpen every pixel
-          of my personal projects, before showing them to the light.
+          My primary focus is frontend web development using Angular and React.js. 
+          Moreover, I have became to study some backend stuff, in particularly I am digging into Node.js.
+          So you will see some new projects available here soon.
          </p>
         <p className="about__paragraph about__paragraph--3">
-          All in all, it would be a real pleasure for me if my passion and interest
+          All in all, it would be a real pleasure if my passion and interest
           in tech could solve people's problems and make their life easier.
           Therefore, in case you have any questions, don't hesitate to contact me.
          </p>
@@ -33,6 +33,7 @@ const About = props => (
            <div className="about__skill">react</div>
            <div className="about__skill">redux</div>
            <div className="about__skill">jest</div>
+           <div className="about__skill">angular</div>
            <div className="about__skill">git</div>
          </div>
       </div>
