@@ -5,6 +5,11 @@ const Projects = () => (
     <section className="projects">
         <div className="row projects__display-flex">
             <Project
+                number={5}
+                github={'https://github.com/floxaz/luxuryVoyage'}
+                live={'https://luxuryvoyage.herokuapp.com/'}
+            />
+            <Project
                 number={4}
                 github={'https://github.com/floxaz/movie-gallery'}
                 live={'http://moviegallery.rossyatsura.com'}
